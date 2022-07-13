@@ -6,7 +6,7 @@ using JupiterAutomation.PageObjects;
 using JupiterAutomation.CustomException;
 using System.Collections.Generic;
 using OpenQA.Selenium;
-
+//[assembly: Parallelize(Workers =0,Scope =ExecutionScope.MethodLevel)]
 namespace JupiterAutomation
 {
     [TestClass]
@@ -41,22 +41,23 @@ namespace JupiterAutomation
         }
 
         [TestMethod]
-        public void TestContactSubmission()
+        //Note: Run this test 5 times to ensure 100% pass rate
+        [DataRow("test1", "test1@gmail.com", "this is test1 message")]
+        [DataRow("test2", "test2@gmail.com", "this is test2 message")]
+        [DataRow("test3", "test3@gmail.com", "this is test3 message")]
+        [DataRow("test4", "test4@gmail.com", "this is test4 message")]
+        [DataRow("test5", "test5@gmail.com", "this is test5 message")]
+        public void TestContactSubmission(string forename, string email, string message)
         {
-            //Note: Run this test 5 times to ensure 100% pass rate
-            //We can using scenario outline in BDD mode to implement run same scenario mutiple times with different data,hard code here temporarily
-            for (int i = 0; i < 5; i++)
-            {
-                //1.From the home page go to contact page
-                ContactPage contactPage = homepage.NavigateToContact();
-                //2.Populate mandatory fields
-                contactPage.AddContact(foreName: "test1", email: "test1@gmail.com", message: "this is test message");
-                //3.Click submit button
-                ContactSuccessPage successPage = contactPage.SubmitContact();
-                //4.Validate successful submission message
-                Assert.AreEqual(String.Format("Thanks test1, we appreciate your feedback."), successPage.GetAlterSuccessText());
-                successPage.NavigateToHome();
-            }
+            //1.From the home page go to contact page
+            ContactPage contactPage = homepage.NavigateToContact();
+            //2.Populate mandatory fields
+            contactPage.AddContact(foreName: forename, email: email, message: message);
+            //3.Click submit button
+            ContactSuccessPage successPage = contactPage.SubmitContact();
+            //4.Validate successful submission message
+            Assert.AreEqual(String.Format("Thanks {0}, we appreciate your feedback.",forename), successPage.GetAlterSuccessText());
+            successPage.NavigateToHome();
         }
 
         [TestMethod]

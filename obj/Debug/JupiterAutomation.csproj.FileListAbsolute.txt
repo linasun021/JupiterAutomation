@@ -1,0 +1,17 @@
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\JupiterAutomation.dll.config
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\JupiterAutomation.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\JupiterAutomation.pdb
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\WebDriver.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\wangx\source\repos\JupiterAutomation\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\wangx\source\repos\JupiterAutomation\obj\Debug\JupiterAutomation.csproj.CoreCompileInputs.cache
+C:\Users\wangx\source\repos\JupiterAutomation\obj\Debug\JupiterAutomation.csproj.CopyComplete
+C:\Users\wangx\source\repos\JupiterAutomation\obj\Debug\JupiterAutomation.dll
+C:\Users\wangx\source\repos\JupiterAutomation\obj\Debug\JupiterAutomation.pdb
